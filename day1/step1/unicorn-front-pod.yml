@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: unicorn-front
+  name: unicorn-front
+spec:
+  containers:
+    - image: public.ecr.aws/l3x6e3t5/takima-training/nginx
+      name: unicorn-front
+      resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
